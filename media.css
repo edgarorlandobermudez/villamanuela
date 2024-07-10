@@ -184,3 +184,9 @@
         flex-basis: 100%;
     }
 }
+
+footer .copyright {
+    background-color: #f0f0f0; /* Color de fondo gris suave */
+    padding: 10px; /* Espacio interno para el texto */
+    text-align: center; /* Centra el texto horizontalmente */
+}
