@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubre nuestra oferta de alquiler de casa en Mesa de los Santos. Disfruta de una estadía tranquila y exclusiva en Villa Manuela, rodeado de naturaleza, totalmente privada, no es compartida.">
-    <title>Alquiler de Casa en Mesa de los Santos - Villa Manuela</title>
-    <!-- enlace a CSS personalizado  -->
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./media.css">
-    <!-- enlace a CSS personalizado  -->
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Descubre nuestra oferta de alquiler de casa en Mesa de los Santos. Disfruta de una estadía tranquila y exclusiva en Villa Manuela, rodeado de naturaleza, totalmente privada, no es compartida.">
+        <title>Alquiler de Casa en Mesa de los Santos - Villa Manuela</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./media.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
 <body>
-    <!-- barra de navegación  -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">
-                Inicio
-            </div>
-
+            <div class="logo">Inicio</div>
             <ul class="nav-list">
                 <li><a href="#property" class="list-item">Propiedades</a></li>
                 <li><a href="#service" class="list-item">Servicios</a></li>
@@ -28,7 +21,6 @@
                 <li><a href="#aboutus" class="list-item">Sobre nosotros</a></li>
                 <li><a href="#contact" class="list-item contact">Contáctanos</a></li>
             </ul>
-
             <div class="mobile-menu" onclick="showMenu()">
                 <div class="line line1"></div>
                 <div class="line line2"></div>
@@ -36,9 +28,6 @@
             </div>
         </div>
     </nav>
-    <!-- barra de navegación  -->
-
-    <!-- encabezado  -->
     <section class="header">
         <div class="container">
             <div class="header-info">
@@ -47,39 +36,51 @@
                     Completamente privada y exclusiva para ti y tu familia.
                     Sin inquilinos, tendrás total tranquilidad y privacidad en este oasis natural.
                 </p>
-
-
             </div>
         </div>
     </section>
-    <!-- encabezado  -->
 
-    <!-- enlace a gsap  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- enlace a gsap  -->
+    <main>
+        <section id="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="images/banner.jpg" alt="Image 1" onclick="openModal(this.src)">
+                    <img src="images/banner2.png" alt="Image 2" onclick="openModal(this.src)">
+                    <img src="images/banner3.png" alt="Image 3" onclick="openModal(this.src)">
+                    <img src="images/banner.jpg" alt="Image 4" onclick="openModal(this.src)">
+                    <img src="images/banner2.png" alt="Image 5" onclick="openModal(this.src)">
+                    <img src="images/banner3.png" alt="Image 6" onclick="openModal(this.src)">
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </section>
 
-    <script src="./app.js"></script>
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
 
-
-        <main>
         <section id="home">
             <h2>Cabaña Mesa de Los Santos - Villa Manuela</h2>
             <p>Disfruta de una estadía tranquila, en armonía con la naturaleza y excelente vista en Villa Manuela. ¡Tu hogar lejos de casa!</p>
             <p><strong>Promoción Reserva desde: $380.000</strong></p>
             <p>Descuentos a partir del segundo día.</p>
         </section>
+
         <section id="details">
             <h2>Detalles de la Cabaña</h2>
             <p>Una hermosa y cómoda finca arborizada con 7.800 metros cuadrados, totalmente privada, solo para ti y tu familia.</p>
-            <ul>
-                <li>Casa y apartamento tipo Loft</li>
-                <li>4 habitaciones con closets</li>
-                <li>8 camas (2 dobles, 2 sofás cama, 4 sencillas)</li>
-                <li>4 baños con calentador de agua</li>
-                <li>Cocina integral y área de comedor</li>
-                <li>Parqueadero privado para 4 carros</li>
-                <li>WiFi y TV con canales vía satélite</li>
-                <li>Asador BBQ</li>
+            <ul class="checklist">
+                <li><i class="fas fa-check"></i> Casa y apartamento tipo Loft</li>
+                <li><i class="fas fa-check"></i> 4 habitaciones con closets</li>
+                <li><i class="fas fa-check"></i> 8 camas (2 dobles, 2 sofás cama, 4 sencillas)</li>
+                <li><i class="fas fa-check"></i> 4 baños con calentador de agua</li>
+                <li><i class="fas fa-check"></i> Cocina integral y área de comedor</li>
+                <li><i class="fas fa-check"></i> Parqueadero privado para 4 carros</li>
+                <li><i class="fas fa-check"></i> WiFi y TV con canales vía satélite</li>
+                <li><i class="fas fa-check"></i> Asador BBQ</li>
             </ul>
             <p>Ambiente familiar, exclusividad 100%. ¡Reserva ahora y disfruta de un ambiente libre de contaminación!</p>
         </section>
@@ -109,12 +110,10 @@
                     <img src="images/facebook.png" alt="Facebook" style="width: 30px; height: auto; margin-right: 5px;">
                     <span style="vertical-align: middle;">Facebook</span>
                 </a>
-                
                 <a href="https://www.instagram.com/cabanas_mesa_de_los_santos/" target="_blank" style="display: inline-flex; align-items: center;">
                     <img src="images/instagram.png" alt="Instagram" style="width: 30px; height: auto; margin-right: 5px;">
                     <span style="vertical-align: middle;">Instagram</span>
                 </a>
-                
             </div>
             <div class="contact-info">
                 <p>Mesa de los Santos</p>
@@ -132,13 +131,12 @@
                         <strong style="vertical-align: middle;">3208496000</strong>
                     </a>
                 </p>
-                
-                
                 <p>&copy; 2024 by Villa Manuela - Mesa de los Santos</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./app.js"></script>
 </body>
-
 </html>
