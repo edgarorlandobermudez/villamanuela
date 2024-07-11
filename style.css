@@ -15,14 +15,14 @@
     -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en dispositivos táctiles */
 }
 
-.carousel-slide {
-    flex: 0 0 auto;
-    width: 100vw; /* Ancho total de la ventana */
-    scroll-snap-align: start; /* Alineación al inicio para un desplazamiento suave */
-    display: flex;
-    gap: 20px; /* Espacio entre las imágenes */
-    padding: 20px; /* Espacio interno para las imágenes */
+
+
+.carousel-slide img {
+    width: 100px; /* Ajusta el tamaño de la imagen pequeña según sea necesario */
+    height: auto; /* Mantener la proporción de aspecto */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre las imágenes */
 }
+
 
 .carousel-slide img {
     width: calc(33.33% - 20px); /* Ajusta el tamaño y el espacio entre las imágenes */

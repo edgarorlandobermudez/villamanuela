@@ -27,6 +27,13 @@ function openModal(src) {
     modalImg.src = src;
 }
 
+function openModal(img) {
+    var modal = document.getElementById('imageModal');
+    var modalImg = document.getElementById('modalImage');
+    modal.style.display = "block";
+    modalImg.src = img.getAttribute('data-large');
+}
+
 function closeModal() {
     const modal = document.getElementById("imageModal");
     modal.style.display = "none";

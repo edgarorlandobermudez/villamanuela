@@ -33,7 +33,31 @@
 
         gtag('config', 'G-P6F8M0SLRN');
         </script>
-        
+
+    <!-- Marcado estructurado Schema.org -->
+        <script type="application/ld+json">
+            {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Villa Manuela",
+            "url": "https://villamanuela.com/",
+            "logo": "https://villamanuela.com/images/house.ico",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+573103914481",
+                "contactType": "customer service"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Calle Principal, Número 123",
+                "addressLocality": "Mesa de los Santos",
+                "addressRegion": "Santander",
+                "postalCode": "681001",
+                "addressCountry": "Colombia"
+            }
+            }
+            </script>
+
     </head>
 
 <body>
@@ -71,25 +95,28 @@
         <section id="carousel">
             <div class="carousel-container">
                 <div class="carousel-slide">
-                    <img src="images/banner.jpg" alt="Inmuebles en Mesa de los Santos" onclick="openModal(this.src)">
-                    <img src="images/banner1.jpg" alt="Cabaña Privada en la Mesa" onclick="openModal(this.src)">
-                    <img src="images/banner2.jpeg" alt="Alquiler cabaña privada en la mesa de los santos" onclick="openModal(this.src)"> 
-                    <img src="images/banner3.jpeg" alt="Cabaña Mesa de los Santos" onclick="openModal(this.src)">
-                    <img src="images/banner4.jpeg" alt="Alquiler Mesa de los Santos" onclick="openModal(this.src)">
-                    <img src="images/banner5.jpeg" alt="Cabaña en Mesa de los Santos" onclick="openModal(this.src)">
-                    <img src="images/banner6.jpeg" alt="Alquiler de cabaña en Mesa de los Santos" onclick="openModal(this.src)">
-                    <img src="images/banner7.jpeg" alt="Alquilamos finca en Mesa de los Santos" onclick="openModal(this.src)">
-                    <img src="images/banner8.jpeg" alt="Finca arriendo Mesa de los Santos" onclick="openModal(this.src)">
-                    <img src="images/banner9.jpeg" alt="Mesa de los Santos" onclick="openModal(this.src)">
-                    <img src="images/banner10.jpeg" alt="Alquiler de finca en la Mesa de los Santos" onclick="openModal(this.src)">
-                    <img src="images/banner11.jpeg" alt="Arriendo de Finca en Mesa de los santos" onclick="openModal(this.src)">
-                    <img src="images/banner12.jpeg" alt="Alquiler Cabana Mesa De Los Santos" onclick="openModal(this.src)">
-                    <img src="images/banner13.jpeg" alt="Finca en Arriendo en Los Santos" onclick="openModal(this.src)">
-                    <img src="images/banner14.jpeg" alt="Finca en alquiler en Los Santos" onclick="openModal(this.src)">
-                    <img src="images/banner15.jpeg" alt="Cabaña en la Mesa de los Santos" onclick="openModal(this.src)">
-                    <img src="images/banner16.jpeg" alt="Hotel Mesa de los Santos" onclick="openModal(this.src)">
-                    <img src="images/banner17.jpeg" alt="Mesa de los Santos" onclick="openModal(this.src)">
-                    <img src="images/banner18.jpg" alt="Mesa de los Santos" onclick="openModal(this.src)">
+
+
+                    <!-- <img src="images/banner.jpg" alt="Inmuebles en Mesa de los Santos" onclick="openModal(this.src)"> -->
+                    <img src="images/banner-s.jpg" data-large="images/banner.jpg" alt="Inmuebles en Mesa de los Santos" onclick="openModal(this)">
+                    <img src="images/banner1-s.jpg" data-large="images/banner1.jpg" alt="Cabaña Privada en la Mesa" onclick="openModal(this)">
+                    <img src="images/banner2-s.jpeg" data-large="images/banner2.jpeg" alt="Cabaña Privada en la Mesa" onclick="openModal(this)">
+                    <img src="images/banner3-s.jpeg" data-large="images/banner3.jpeg" alt="Cabaña Mesa de los Santos" onclick="openModal(this)">
+                    <img src="images/banner4-s.jpeg" data-large="images/banner4.jpeg" alt="Alquiler Mesa de los Santos" onclick="openModal(this)">
+                    <img src="images/banner5-s.jpeg" data-large="images/banner5.jpeg" alt="Cabaña en Mesa de los Santos" onclick="openModal(this)">
+                    <img src="images/banner6-s.jpeg" data-large="images/banner6.jpeg" alt="Alquiler de cabaña en Mesa de los Santos" onclick="openModal(this)">
+                    <img src="images/banner7-s.jpeg" data-large="images/banner7.jpeg" alt="Alquilamos finca en Mesa de los Santos" onclick="openModal(this)">
+                    <img src="images/banner8-s.jpeg" data-large="images/banner8.jpeg" alt="Finca arriendo Mesa de los Santos" onclick="openModal(this)">
+                    <img src="images/banner9-s.jpeg" data-large="images/banner9.jpeg" alt="Mesa de los Santos" onclick="openModal(this)">
+                    <img src="images/banner10-s.jpeg" data-large="images/banner10.jpeg" alt="Alquiler de finca en la Mesa de los Santos" onclick="openModal(this)">
+                    <img src="images/banner11-s.jpeg" data-large="images/banner11.jpeg" alt="Arriendo de Finca en Mesa de los santos" onclick="openModal(this)">
+                    <img src="images/banner12-s.jpeg" data-large="images/banner12.jpeg" alt="Alquiler Cabana Mesa De Los Santos" onclick="openModal(this)">
+                    <img src="images/banner13-s.jpeg" data-large="images/banner13.jpeg" alt="Finca en Arriendo en Los Santos" onclick="openModal(this)">
+                    <img src="images/banner14-s.jpeg" data-large="images/banner14.jpeg" alt="Finca en alquiler en Los Santos" onclick="openModal(this)">
+                    <img src="images/banner15-s.jpeg" data-large="images/banner15.jpeg" alt="Cabaña en la Mesa de los Santos" onclick="openModal(this)">
+                    <img src="images/banner16-s.jpeg" data-large="images/banner16.jpeg" alt="Hotel Mesa de los Santos" onclick="openModal(this)">
+                    <img src="images/banner17-s.jpeg" data-large="images/banner17.jpeg" alt="Mesa de los Santos" onclick="openModal(this)">
+                    <img src="images/banner18-s.jpg" data-large="images/banner18.jpg" alt="Casa en la Mesa de los Santos" onclick="openModal(this)">
 
                     <!--  -  -  - Cabaña familiar -->
                     <!-- Add more images as needed -->
@@ -98,6 +125,11 @@
             <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
             <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </section>
+
+        <!-- <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div> -->
 
         <div id="imageModal" class="modal">
             <span class="close" onclick="closeModal()">&times;</span>
@@ -183,6 +215,11 @@
                 <a href="https://www.instagram.com/cabanas_mesa_de_los_santos/" target="_blank" style="display: inline-flex; align-items: center;">
                     <img src="images/instagram.png" alt="Instagram" style="width: 30px; height: auto; margin-right: 5px;">
                     <span style="vertical-align: middle;">Instagram</span>
+                </a>
+                <!-- Otros enlaces de redes sociales -->
+                <a href="mailto:villamanuelasantos&#64;gmail.com" style="display: inline-flex; align-items: center;">
+                    <img src="images/email-icon.png" alt="Email" style="width: 30px; height: auto; margin-right: 5px;">
+                    <span style="vertical-align: middle;">Enviar correo</span>
                 </a>
             </div>
             <div class="contact-info">
