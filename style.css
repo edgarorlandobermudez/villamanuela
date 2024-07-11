@@ -8,26 +8,28 @@
     overflow: hidden;
 }
 
-.carousel-container {
+/* .carousel-container {
     display: flex;
     overflow-x: auto; /* Permite desplazamiento horizontal */
     scroll-snap-type: x mandatory; /* Establece el tipo de desplazamiento obligatorio horizontal */
     -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en dispositivos táctiles */
+} */
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 }
 
-
+.carousel-slide {
+    display: flex; /* Mostrar las imágenes en línea horizontal */
+    flex-wrap: nowrap; /* Evitar que las imágenes se envuelvan a la siguiente línea */
+}
 
 .carousel-slide img {
-    width: 100px; /* Ajusta el tamaño de la imagen pequeña según sea necesario */
+    max-width: 100%; /* Ajustar el ancho máximo de las imágenes */
     height: auto; /* Mantener la proporción de aspecto */
-    cursor: pointer; /* Cambiar el cursor al pasar sobre las imágenes */
-}
-
-
-.carousel-slide img {
-    width: calc(33.33% - 20px); /* Ajusta el tamaño y el espacio entre las imágenes */
-    max-height: 200px; /* Ajusta la altura máxima según tus necesidades */
-    object-fit: cover;
+    margin-right: 10px; /* Espacio entre las imágenes */
     cursor: pointer;
     border-radius: 10px;
 }
