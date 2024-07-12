@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://villamanuela.com/</loc>
-        <changefreq>weekly</changefreq>
+        <loc>https://www.villamanuela.com/</loc>
+        <lastmod>2024-07-12</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>1.0</priority>
+    </url>
+    <!-- Entrada para el favicon -->
+    <url>
+        <loc>https://www.villamanuela.com/images/house.ico</loc>
+        <lastmod>2024-07-12</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
     </url>
 </urlset>
