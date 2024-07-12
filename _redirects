@@ -1,6 +1,6 @@
 # Redirección HTTP a HTTPS con www
-http://villamanuela.com/* https://www.villamanuela.com/:splat 301
-http://www.villamanuela.com/* https://www.villamanuela.com/:splat 301
+http://villamanuela.com/* https://www.villamanuela.com/:splat 301!
+http://www.villamanuela.com/* https://www.villamanuela.com/:splat 301!
 
 # Redirección HTTPS a www (opcional, para asegurar que todas las solicitudes usen www)
-https://villamanuela.com/* https://www.villamanuela.com/:splat 301
+https://villamanuela.com/* https://www.villamanuela.com/:splat 301!
